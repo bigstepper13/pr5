@@ -45,18 +45,15 @@ public class FirstFragment extends Fragment {
             public void onClick(View view) {
                 String amount = first_fragment_edit_text.getText().toString();
 
-                if (isNumber(amount)) {
-                    ArrayList<String> Name =  new ArrayList<String>();
-                    Name.add(name);
-                    Name.add(amount);
+                ArrayList<String> Name =  new ArrayList<String>();
+                Name.add(name);
+                Name.add(amount);
 
-                    Bundle bundle = new Bundle();
-                    bundle.putStringArrayList("name&team",  Name);
-                    Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_secondFragment, bundle);
-                } else {
-                    first_fragment_edit_text.setText("");
-                    first_fragment_edit_text.setHint(getResources().getString(R.string.name_2));
-                }
+                Bundle bundle = new Bundle();
+                bundle.putStringArrayList("name&team",  Name);
+                Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_secondFragment, bundle);
+                first_fragment_edit_text.setText("");
+                first_fragment_edit_text.setHint(getResources().getString(R.string.name_2));
             }
         });
     }
