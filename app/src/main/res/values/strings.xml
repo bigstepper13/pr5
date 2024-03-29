@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PR_5</string>
+    <string name="name">Введите имя игрока:</string>
+    <string name="name_2">Имя игрока</string>
+    <string name="dalee">Далее</string>
+    <string name="player">Игрок:</string>
+    <string name="team">Команда</string>
+    <string name="team_2">Введите команду игрока:</string>
+</resources>
